@@ -1,6 +1,6 @@
 /*
  * Implementar um programa que defina a quantidade 
- * de elementos nesse vetor que são pares
+ * de elementos no vetor que são pares
  */
 
 package arrays;
@@ -8,9 +8,7 @@ package arrays;
 import java.util.Scanner;
 
 public class Ex07 {
-
 	public static void main(String[] args) {
-		
 		Scanner scan = new Scanner(System.in);
 		
 		int[] vetorA = new int[10];
@@ -27,6 +25,7 @@ public class Ex07 {
 				System.out.println("Numeros pares: " + vetorA[i]);
 			}			
 		}	
-		System.out.println("Total pares: " + qtdPares);
+		System.out.println("Total: " + qtdPares);
+		scan.close();
 	}
 }

@@ -17,26 +17,20 @@ public class Ex05 {
 		
 		for(int i=0; i<vetorA.length; i++) {
 			System.out.println("Entre com a primeira posição:" + i);
-			vetorA[i] = scan.nextInt();
-			
-			//vetorB[i] = vetorA[i] * i;
-			
-			// Se você quiser que o vetor B seja o retso da divisao de A por 2
-			//Faça:
-			
-			vetorB[i] = vetorA[i] % 2;
+			vetorA[i] = scan.nextInt();	
+			vetorB[i] = vetorA[i] * i;
 		}
 		
 		System.out.println("vetor A:");
 		for(int i=0; i<vetorA.length; i++) {
-			System.out.println(vetorA[i]);
+			System.out.print(vetorA[i] + " ");
 		}
 		System.out.println();
 		
 		System.out.println("vetor B:");
 		for(int i=0; i<vetorB.length; i++) {
-			System.out.println(vetorB[i]);
+			System.out.print(vetorB[i] + " ");
 		}
+		scan.close();
 	}
-
 }

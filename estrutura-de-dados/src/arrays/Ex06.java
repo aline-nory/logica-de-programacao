@@ -1,17 +1,14 @@
 package arrays;
 
-import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class Ex06 {
-
-	public static void main(String[] args) {
-		
+	public static void main(String[] args) {		
 		Scanner scan = new Scanner(System.in);
 		
 		int[] vetorA = new int[3];
 		int[] vetorB = new int[vetorA.length];
-		double[] vetorC = new double[vetorA.length]; //No caso de divisão
+		double[] vetorC = new double[vetorA.length]; 
 		
 		for(int i=0; i<vetorA.length;i++) {
 			System.out.println("Entre com a posição de A: " + i);
@@ -44,12 +41,11 @@ public class Ex06 {
 		
 		System.out.println();
 		
-		DecimalFormat df = new DecimalFormat("###,###.##"); //No caso de divisao
-		
 		System.out.println("vetor C:");
 		for(int i=0; i<vetorC.length; i++) {
 			System.out.print(vetorC[i] + " ");
 		}
+		scan.close();
 	}
 }
 

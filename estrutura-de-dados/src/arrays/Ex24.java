@@ -15,7 +15,7 @@ public class Ex24 {
 		int posC = 0;
 		
 		for(int i=0; i<vetorA.length; i++) {
-			System.out.println("Entre com o número de A: " + (i+1));
+			System.out.println("Entre com o número de A: ");
 			vetorA[i] = scan.nextInt();
 		}
 		
@@ -46,8 +46,6 @@ public class Ex24 {
 			System.out.print(vetorC[i] + " ");
 		}
 		System.out.println();
-		
-		
+		scan.close();	
 	}
-
 }

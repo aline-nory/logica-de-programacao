@@ -3,9 +3,7 @@ package matrizes;
 import java.util.Random;
 
 public class Ex05 {
-
 	public static void main(String[] args) {
-		
 		Random numeroRandom = new Random();
 
 		int[][] matrizM = new int[10][10];

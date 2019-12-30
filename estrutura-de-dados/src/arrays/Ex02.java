@@ -10,9 +10,7 @@ package arrays;
 import java.util.Scanner;
 
 public class Ex02 {
-
 	public static void main(String[] args) {
-		
 		Scanner scan = new Scanner(System.in);
 		
 		int[] vetorA = new int[8];
@@ -35,6 +33,6 @@ public class Ex02 {
 		for(int i=0; i<vetorB.length; i++) {
 			System.out.print(vetorB[i] + " ");
 		}
+		scan.close();
 	}
-
 }

@@ -3,16 +3,13 @@ package matrizes;
 import java.util.Scanner;
 
 public class Ex06 {
-
 	public static void main(String[] args) {
-
 		Scanner scan = new Scanner(System.in);
 
 		int[][] matrizM = new int[3][3];
 
 		for(int i=0;i<matrizM.length; i++) {
 			for(int j=0; j<matrizM[i].length; j++) {
-
 				System.out.println("Entre com o valor da pos [" + i + "," + j + "]:");
 				matrizM[i][j] = scan.nextInt();
 			}
@@ -43,5 +40,6 @@ public class Ex06 {
 
 		System.out.println("Pares: " + qtdPares);
 		System.out.println("Impares: " + qtdImpares);
+		scan.close();
 	}
 }

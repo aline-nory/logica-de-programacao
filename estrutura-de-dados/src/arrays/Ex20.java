@@ -3,9 +3,7 @@ package arrays;
 import java.util.Scanner;
 
 public class Ex20 {
-
 	public static void main(String[] args) {
-
 		Scanner scan = new Scanner(System.in);
 		
 		int[] vetorA = new int[10];
@@ -13,16 +11,11 @@ public class Ex20 {
 		int[] vetorC = new int[vetorA.length];
 
 		for(int i=0; i<vetorA.length; i++) {
-
-			System.out.println("Entre com um número de A:" + 1);
-			vetorA[i] = scan.nextInt();
-			
-			System.out.println("Entre com um número de B:" + 1);
+			System.out.println("Entre com um número de A " + (i+1));
+			vetorA[i] = scan.nextInt();	
+			System.out.println("Entre com um número de B " + (i+1));
 			vetorB[i] = scan.nextInt();
-			
-			//vetorC[i] = (vetorA[i] > vetorB[i]) ? 1 : -1;
-			vetorC[i] = (vetorA[i] == vetorB[i]) ? 0 : (vetorA[i] > vetorB[i]) ? 1 : -1;
-			
+			vetorC[i] = (vetorA[i] == vetorB[i]) ? 0 : (vetorA[i] > vetorB[i]) ? 1 : -1;		
 		}
 	
 		System.out.println("Vetor A = ");
@@ -42,6 +35,6 @@ public class Ex20 {
 			System.out.print(vetorC[i] + " ");
 		}
 		System.out.println();
+		scan.close();
 	}
-
 }

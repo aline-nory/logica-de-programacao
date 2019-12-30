@@ -3,9 +3,7 @@ package arrays;
 import java.util.Scanner;
 
 public class Ex23 {
-
-	public static void main(String[] args) {
-		
+	public static void main(String[] args) {	
 		Scanner scan = new Scanner(System.in);
 		
 		int[] vetorA = new int [5];
@@ -13,13 +11,13 @@ public class Ex23 {
 		int[] vetorC = new int [vetorA.length * 2];
 		
 		for(int i=0; i<vetorA.length; i++) {
-			System.out.println("Entre com o número de A: " + (i+1));
+			System.out.println("Entre com o número de A: ");
 			vetorA[i] = scan.nextInt();
 			vetorC[i] = vetorA[i];
 		}
 		
 		for(int i=0; i<vetorB.length; i++) {
-			System.out.println("Entre com o número de B: " + (i+1));
+			System.out.println("Entre com o número de B: ");
 			vetorB[i] = scan.nextInt();		
 			vetorC[vetorA.length + i] = vetorB[i];
 		}
@@ -41,7 +39,6 @@ public class Ex23 {
 			System.out.print(vetorC[i] + " ");
 		}
 		System.out.println();
-		
+		scan.close();
 	}
-
 }

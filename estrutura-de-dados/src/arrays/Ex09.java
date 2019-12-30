@@ -10,16 +10,14 @@ package arrays;
 import java.util.Scanner;
 
 public class Ex09 {
-
 	public static void main(String[] args) {
-		
+		Scanner scan = new Scanner(System.in);
 		int[] vetorA = new int[5];
 		int total = 0;
 		
 		for(int i=0; i<vetorA.length; i++) {
 			System.out.println("Entre com um número: ");
-			Scanner scan = new Scanner(System.in);
-			vetorA[i] = scan.nextInt();
+			vetorA[i] = scan.nextInt();			
 		}
 		
 		for(int i=0; i<vetorA.length; i++) {
@@ -27,9 +25,9 @@ public class Ex09 {
 				total += vetorA[i];
 			}
 		}
-		
 		System.out.println();
 		System.out.println(total);
+		scan.close();
 	}
 
 }
